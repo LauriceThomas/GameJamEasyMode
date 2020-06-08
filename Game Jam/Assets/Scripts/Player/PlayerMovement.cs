@@ -44,7 +44,10 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
             {
-                CheckIfGrounded();
+                if(CheckIfGrounded())
+                {
+
+                }
             }
         }
 
@@ -61,8 +64,9 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    public void CheckIfGrounded()
+    public bool CheckIfGrounded()
     {
 
+        return false;
     }
 }
