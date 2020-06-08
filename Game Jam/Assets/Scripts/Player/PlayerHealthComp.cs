@@ -8,6 +8,7 @@ public class PlayerHealthComp : MonoBehaviour
     public float health;
     public float maxHealth = 100;
     public Image healthbar;
+    public bool isInDeathMode = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class PlayerHealthComp : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
-            ReceiveDamage(10);
+            ReceiveDamage(100);
 
         if (healthbar)
         {
@@ -31,10 +32,15 @@ public class PlayerHealthComp : MonoBehaviour
     public void ReceiveDamage(float damage)
     {
         health -= damage;
+
+        if(health <= 0)
+        {
+            isInDeathMode = true;
+        }
     }
 
-    public void GainHealth(float regenHealth)
+    public void GainHealth(float healthAdded)
     {
-        health += regenHealth;
+        health += healthAdded;
     }
 }
