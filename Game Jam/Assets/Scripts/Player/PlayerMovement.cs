@@ -28,9 +28,6 @@ public class PlayerMovement : MonoBehaviour
         //allow up/down float controls but no jump
         if (isPlayerDead)
         {
-            playerRb.gravityScale = 0f;
-            playerRb.drag = 1.4f;
-
             if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
             {
                 playerRb.velocity = Vector2.up * speed;
@@ -44,9 +41,6 @@ public class PlayerMovement : MonoBehaviour
         //jump enabled but not up/down float
         else
         {
-            playerRb.gravityScale = 15f;
-            playerRb.drag = 0.05f;
-
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
             {
                 if (CheckIfGrounded())
@@ -85,4 +79,3 @@ public class PlayerMovement : MonoBehaviour
         return raycastHit.collider != null;
     }
 }
-
