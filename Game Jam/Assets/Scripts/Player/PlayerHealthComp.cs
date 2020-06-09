@@ -47,4 +47,10 @@ public class PlayerHealthComp : MonoBehaviour
     {
         health += healthAdded;
     }
+
+    public void Resurrect()
+    {
+        health = maxHealth;
+        isInDeathMode = false;
+    }
 }
