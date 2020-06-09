@@ -4,69 +4,85 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public static bool isPlayerDead;    //variable to be set in PlayerHealth
-    public float speed;                 //player movement speed
-    private float h;                    //horizontal axis
-    private float v;                    //vertical axis
+    public static bool isPlayerDead;                //variable to be set in PlayerHealth
+    public LayerMask GroundLayerMask;               //helps ground check to ignore player collider
+    public Rigidbody2D playerRb;
+    public BoxCollider2D boxCollider2d;
+    public float speed;
+    public float jumpForce;
+    public static bool isFacingRight = true;       // Will be used to flip key sprite and grabber positions in Grabber Comp.
 
-    
-    void Start()
+    void Awake()
     {
-        h = 0f;
-        v = 0f;
+        playerRb = transform.GetComponent<Rigidbody2D>();
+        boxCollider2d = transform.GetComponent<BoxCollider2D>();
+        speed = 15f;
+        jumpForce = 35;
         isPlayerDead = false;
-    }
-
- 
-    void Update()
-    {
-        h = Input.GetAxis("Horizontal");
-        v = Input.GetAxis("Vertical");
     }
 
     private void FixedUpdate()
     {
+        isPlayerDead = PlayerHealthComp.isInDeathMode;
+
         //allow up/down float controls but no jump
         if (isPlayerDead)
         {
-            if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
-            {
+            playerRb.gravityScale = 0f;
+            playerRb.drag = 1.4f;
 
-            }
-            if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
             {
-
+                playerRb.velocity = Vector2.up * speed;
             }
-        
-    }
+            else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+            {
+                playerRb.velocity = Vector2.down * speed;
+            }
+        }
+
         //jump enabled but not up/down float
         else
         {
+            playerRb.gravityScale = 15f;
+            playerRb.drag = 0.05f;
+
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
             {
-                if(CheckIfGrounded())
+                if (CheckIfGrounded())
                 {
-
+                    playerRb.velocity = Vector2.up * jumpForce;
                 }
             }
         }
 
         //left and right controls stay the same either way
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-
+            playerRb.velocity = new Vector2(-speed, playerRb.velocity.y);
+            isFacingRight = false;
         }
-
-        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
-
+            playerRb.velocity = new Vector2(speed, playerRb.velocity.y);
+            isFacingRight = true;
+        }
+        else if (!isPlayerDead)
+        {
+            playerRb.velocity = new Vector2(0, playerRb.velocity.y);
         }
 
     }
 
     public bool CheckIfGrounded()
     {
+        float extendBox = 0.05f;
+        float boxAngle = 0f;
 
-        return false;
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider2d.bounds.center,
+            boxCollider2d.bounds.size, boxAngle, Vector2.down, extendBox, GroundLayerMask);
+
+        return raycastHit.collider != null;
     }
 }
+
