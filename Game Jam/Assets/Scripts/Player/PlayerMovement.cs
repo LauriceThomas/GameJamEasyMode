@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public static bool isPlayerDead;                //variable to be set in PlayerHealth
-    public LayerMask GroundLayerMask;               //helps ground check to ignore player collider
+    public static bool isPlayerDead;    //variable to be set in PlayerHealth
+    public LayerMask GroundLayerMask;   //helps ground check to ignore player collider
     public Rigidbody2D playerRb;
     public BoxCollider2D boxCollider2d;
     public float speed;
     public float jumpForce;
-    public static bool isFacingRight = true;       // Will be used to flip key sprite and grabber positions in Grabber Comp.
-
+    
     void Awake()
     {
         playerRb = transform.GetComponent<Rigidbody2D>();
@@ -23,11 +22,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        isPlayerDead = PlayerHealthComp.isInDeathMode;
-
+       
         //allow up/down float controls but no jump
         if (isPlayerDead)
         {
+
             playerRb.gravityScale = 0f;
             playerRb.drag = 1.4f;
 
@@ -60,14 +59,14 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             playerRb.velocity = new Vector2(-speed, playerRb.velocity.y);
-            isFacingRight = false;
         }
+
         else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             playerRb.velocity = new Vector2(speed, playerRb.velocity.y);
-            isFacingRight = true;
         }
-        else if (!isPlayerDead)
+
+        else if(!isPlayerDead)
         {
             playerRb.velocity = new Vector2(0, playerRb.velocity.y);
         }
@@ -85,4 +84,3 @@ public class PlayerMovement : MonoBehaviour
         return raycastHit.collider != null;
     }
 }
-
