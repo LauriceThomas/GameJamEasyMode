@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
        
         //allow up/down float controls but no jump
         if (isPlayerDead)
