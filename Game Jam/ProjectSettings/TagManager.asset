@@ -42,17 +42,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: R Arm
-    uniqueID: 3313115891
-    locked: 0
-  - name: Torso
-    uniqueID: 1768735801
+  - name: L Arm
+    uniqueID: 1924147503
     locked: 0
   - name: Legs
     uniqueID: 1307663887
     locked: 0
-  - name: L Arm
-    uniqueID: 1924147503
+  - name: Torso
+    uniqueID: 1768735801
+    locked: 0
+  - name: R Arm
+    uniqueID: 3313115891
     locked: 0
   - name: Objects
     uniqueID: 752848455
