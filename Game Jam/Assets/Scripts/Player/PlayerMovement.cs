@@ -12,6 +12,12 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
     public static bool isFacingRight = true;       // Will be used to flip key sprite and grabber positions in Grabber Comp.
 
+    // Variables to control player's RigidBody2D GravityScale and Drag values while dead or alive
+    public float ghostModeGravityScale = 0;
+    public float ghostModeDrag = 1.4f;
+    public float aliveModeGravityScale = 15;
+    public float aliveModeGravityDrag = 0.05f;
+
     void Awake()
     {
         playerRb = transform.GetComponent<Rigidbody2D>();
@@ -28,8 +34,8 @@ public class PlayerMovement : MonoBehaviour
         //allow up/down float controls but no jump
         if (isPlayerDead)
         {
-            playerRb.gravityScale = 0f;
-            playerRb.drag = 1.4f;
+            playerRb.gravityScale = ghostModeGravityScale;
+            playerRb.drag = ghostModeDrag;
 
             if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
             {
@@ -44,8 +50,8 @@ public class PlayerMovement : MonoBehaviour
         //jump enabled but not up/down float
         else
         {
-            playerRb.gravityScale = 15f;
-            playerRb.drag = 0.05f;
+            playerRb.gravityScale = aliveModeGravityScale;
+            playerRb.drag = aliveModeGravityDrag;
 
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
             {
@@ -71,7 +77,6 @@ public class PlayerMovement : MonoBehaviour
         {
             playerRb.velocity = new Vector2(0, playerRb.velocity.y);
         }
-
     }
 
     public bool CheckIfGrounded()
@@ -85,4 +90,3 @@ public class PlayerMovement : MonoBehaviour
         return raycastHit.collider != null;
     }
 }
-
