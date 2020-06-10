@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public float jumpForce;
     public static bool isFacingRight = true;       // Will be used to flip key sprite and grabber positions in Grabber Comp.
-    public float ggg = 30f;
+
     void Awake()
     {
         playerRb = transform.GetComponent<Rigidbody2D>();
@@ -65,7 +65,6 @@ public class PlayerMovement : MonoBehaviour
         {
             playerRb.velocity = new Vector2(0, playerRb.velocity.y);
         }
-
     }
 
     public bool CheckIfGrounded()

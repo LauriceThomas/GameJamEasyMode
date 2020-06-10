@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrapDamageComp : MonoBehaviour
+public class ResurrectItem : MonoBehaviour
 {
-    public float damageToApply = 100;
-
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -23,11 +21,8 @@ public class TrapDamageComp : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             PlayerHealthComp playerHealth = collision.gameObject.GetComponent<PlayerHealthComp>();
-
-            if(playerHealth)
-            {
-                playerHealth.ReceiveDamage(damageToApply);
-            }
+            playerHealth.Resurrect();
+            Destroy(gameObject);
         }
     }
 }
