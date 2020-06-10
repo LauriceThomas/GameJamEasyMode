@@ -35,7 +35,9 @@ public class PlayerHealthComp : MonoBehaviour
 
     public void ReceiveDamage(float damage)
     {
-        health -= damage;
+        // Prevent HP from going less than 0 and over max health
+        float healthDelta = health - damage;
+        health = Mathf.Clamp(healthDelta, 0, maxHealth);
 
         if(health <= 0)
         {
@@ -45,6 +47,19 @@ public class PlayerHealthComp : MonoBehaviour
 
     public void GainHealth(float healthAdded)
     {
-        health += healthAdded;
+        // Prevent HP from going less than 0 and over max health
+        float healthDelta = health + healthAdded;
+        health = Mathf.Clamp(healthDelta, 0, maxHealth);
+
+        isInDeathMode = false;
+    }
+
+    public void Resurrect()
+    {
+        if(isInDeathMode)
+        {
+            health = maxHealth;
+            isInDeathMode = false;
+        }
     }
 }
