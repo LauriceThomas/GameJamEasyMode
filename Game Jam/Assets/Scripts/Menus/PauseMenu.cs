@@ -2,56 +2,106 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class PauseMenu : MonoBehaviour
 {
     public Canvas PauseCanvas;
-
+    public Canvas ControlsCanvas;
+    public PlayerMovement playerMove;
+    private bool isRestarting;
+    
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         PauseCanvas = GetComponent<Canvas>();
-        Time.timeScale = 1;
+        ControlsCanvas = FindObjectOfType<Canvas>();
+        isRestarting = false;
+        playerMove = FindObjectOfType<PlayerMovement>();
+        ResumeGame();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(isRestarting == true)
+        {
+            SetRestartValues();
+        }
         
         //checks for pause input
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            //on/off switch for pause screen
-            PauseCanvas.enabled = !PauseCanvas.enabled;
-
-            //pauses or unpauses frame dependent movement
+            
             if(Time.timeScale == 1)
             {
-                Time.timeScale = 0;
+                PauseGame();
             }
+            //resumes
             else
             {
-                Time.timeScale = 1;
+                ResumeGame();
             }
         }
+    }
+
+    //Restores time scale
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
+        PauseCanvas.enabled = false;
+        ControlsCanvas.enabled = false;
+    }
+
+    //Stops Time scale
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+        PauseCanvas.enabled = true;
+    }
+
+ 
+    public void SetRestartValues()
+    {
+        PauseCanvas = GetComponent<Canvas>();
+        ControlsCanvas = FindObjectOfType<Canvas>();
+        playerMove = FindObjectOfType<PlayerMovement>();
+        isRestarting = false;
+        playerMove.ResetValues();
+        ResumeGame();
     }
 
     //Restarts current level
     public void RestartButtonPressed()
     {
+        isRestarting = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    //not setup
+    //Opens Controls screen
     public void ControlsButtonPressed()
     {
-        Debug.Log("Controls Pressed");
+        PauseCanvas.enabled = false;
+        ControlsCanvas.enabled = true;
     }
 
-    //not setup
+    //Exits Controls screen
+    public void BackButtonPressed()
+    {
+        PauseCanvas.enabled = true;
+        ControlsCanvas.enabled = false;
+    }
+
+    //Will exit game in build or editor
     public void ExitButtonPressed()
     {
-        Debug.Log("Exit Pressed");
+        #if UNITY_EDITOR
+                EditorApplication.isPlaying = false;
+        #else
+		        Application.Quit();
+        #endif
     }
 }
