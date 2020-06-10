@@ -7,8 +7,8 @@ public class PlayerHealthComp : MonoBehaviour
 {
     public float health;
     public float maxHealth = 100;
-    public Image healthbar;
-    public bool isInDeathMode = false;
+    public Image healthbar;                             // Manipulate HP Bar in UI
+    public static bool isInDeathMode = false;           // use 'PlayerHealthComp.isInDeathMode' to access this variable in other files 
 
     // Start is called before the first frame update
     void Start()
@@ -19,19 +19,25 @@ public class PlayerHealthComp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            ReceiveDamage(100);
+        // Inflict self damage
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            ReceiveDamage(20);
+        }
 
+        // Update HP Bar in UI
         if (healthbar)
         {
             healthbar.fillAmount = health / maxHealth;
-            healthbar.color = (health > 25 ? Color.green : Color.red);
+            healthbar.color = (health > (maxHealth / 4) ? Color.green : Color.red);
         }
     }
 
     public void ReceiveDamage(float damage)
     {
-        health -= damage;
+        // Prevent HP from going less than 0 and over max health
+        float healthDelta = health - damage;
+        health = Mathf.Clamp(healthDelta, 0, maxHealth);
 
         if(health <= 0)
         {
@@ -41,6 +47,19 @@ public class PlayerHealthComp : MonoBehaviour
 
     public void GainHealth(float healthAdded)
     {
-        health += healthAdded;
+        // Prevent HP from going less than 0 and over max health
+        float healthDelta = health + healthAdded;
+        health = Mathf.Clamp(healthDelta, 0, maxHealth);
+
+        isInDeathMode = false;
+    }
+
+    public void Resurrect()
+    {
+        if(isInDeathMode)
+        {
+            health = maxHealth;
+            isInDeathMode = false;
+        }
     }
 }

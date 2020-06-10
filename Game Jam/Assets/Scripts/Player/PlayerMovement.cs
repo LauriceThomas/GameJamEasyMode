@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public static bool isPlayerDead;    //variable to be set in PlayerHealth
-    public LayerMask GroundLayerMask;   //helps ground check to ignore player collider
+    public static bool isPlayerDead;                //variable to be set in PlayerHealth
+    public LayerMask GroundLayerMask;               //helps ground check to ignore player collider
     public Rigidbody2D playerRb;
     public BoxCollider2D boxCollider2d;
     public float speed;
     public float jumpForce;
-    
+    public static bool isFacingRight = true;       // Will be used to flip key sprite and grabber positions in Grabber Comp.
+
+    // Variables to control player's RigidBody2D GravityScale and Drag values while dead or alive
+    public float ghostModeGravityScale = 0;
+    public float ghostModeDrag = 1.4f;
+    public float aliveModeGravityScale = 15;
+    public float aliveModeGravityDrag = 0.05f;
+
     void Awake()
     {
         playerRb = transform.GetComponent<Rigidbody2D>();
@@ -22,14 +29,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
-       
+        isPlayerDead = PlayerHealthComp.isInDeathMode;
+
         //allow up/down float controls but no jump
         if (isPlayerDead)
         {
-
-            playerRb.gravityScale = 0f;
-            playerRb.drag = 1.4f;
+            playerRb.gravityScale = ghostModeGravityScale;
+            playerRb.drag = ghostModeDrag;
 
             if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
             {
@@ -44,8 +50,8 @@ public class PlayerMovement : MonoBehaviour
         //jump enabled but not up/down float
         else
         {
-            playerRb.gravityScale = 15f;
-            playerRb.drag = 0.05f;
+            playerRb.gravityScale = aliveModeGravityScale;
+            playerRb.drag = aliveModeGravityDrag;
 
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
             {
@@ -60,18 +66,17 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             playerRb.velocity = new Vector2(-speed, playerRb.velocity.y);
+            isFacingRight = false;
         }
-
         else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             playerRb.velocity = new Vector2(speed, playerRb.velocity.y);
+            isFacingRight = true;
         }
-
-        else if(!isPlayerDead)
+        else if (!isPlayerDead)
         {
             playerRb.velocity = new Vector2(0, playerRb.velocity.y);
         }
-
     }
 
     public bool CheckIfGrounded()
