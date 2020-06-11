@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< Updated upstream
-- path: Assets/Scenes/Level 3.unity
-=======
-- path: Assets/Scenes/SampleScene.unity
->>>>>>> Stashed changes
+- path: Assets/Scenes/TaveraWorkScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
