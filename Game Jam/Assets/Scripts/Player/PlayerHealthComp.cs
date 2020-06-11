@@ -35,6 +35,8 @@ public class PlayerHealthComp : MonoBehaviour
 
     public void ReceiveDamage(float damage)
     {
+        if (health <= 0) { return; }
+
         // Prevent HP from going less than 0 and over max health
         float healthDelta = health - damage;
         health = Mathf.Clamp(healthDelta, 0, maxHealth);
@@ -42,6 +44,7 @@ public class PlayerHealthComp : MonoBehaviour
         if(health <= 0)
         {
             isInDeathMode = true;
+            Debug.Log("*Play Death Mode Sound*");
         }
     }
 
@@ -58,6 +61,7 @@ public class PlayerHealthComp : MonoBehaviour
     {
         if(isInDeathMode)
         {
+            Debug.Log("*Play Alive Mode Sound*");
             health = maxHealth;
             isInDeathMode = false;
         }

@@ -4,59 +4,42 @@ using UnityEngine;
 
 public class GrabberComp : MonoBehaviour
 {
-    [HideInInspector]
-    public bool isHoldingKey = false;           // Should prevent holding more than one key.
-    
-    private KeyComp keyInHand;                  // The current key component that the player is holding.
-    private SpriteRenderer keySprite;           // Will be used to flip the sprite when player face left or right.
-    private Vector3 originalGrabberPosition;
+    public static KeyComp keyInHand;                        // The current key component that the player is holding.
 
     // Start is called before the first frame update
     void Start()
     {
-        isHoldingKey = false;
-        originalGrabberPosition = gameObject.transform.localPosition;
+        keyInHand = null;
+
+        // Ignore Collision between player and grabber
+        GameObject parentObj = gameObject.transform.parent.gameObject;
+        Physics2D.IgnoreCollision(gameObject.GetComponent<BoxCollider2D>(), parentObj.GetComponent<BoxCollider2D>());
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Update grabber object position base on where the player is moving horizontally
-        float x = PlayerMovement.isFacingRight ? originalGrabberPosition.x : -originalGrabberPosition.x;
-        gameObject.transform.localPosition = new Vector3(x, originalGrabberPosition.y, originalGrabberPosition.z);
-
-        // Update key sprite to also face where ever the player is facing
-        if(keySprite)
-        {
-            keySprite.flipY = !PlayerMovement.isFacingRight;
-        }
-
         // When the player releases the Left Shift button, release the key
-        if(Input.GetKeyUp(KeyCode.LeftShift) && isHoldingKey)
+        if(Input.GetKeyUp(KeyCode.LeftShift) && keyInHand)
         {
-            ClearKeyFromGrabber();
+            keyInHand = null;
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Only grab a key when the player is currently not holding another one, and while they are holding Left Shift button
-        if(collision.gameObject.GetComponent<KeyComp>() && Input.GetKey(KeyCode.LeftShift) && !isHoldingKey)
+        if(collision.gameObject.GetComponent<KeyComp>() && Input.GetKey(KeyCode.LeftShift) && !keyInHand)
         {
-            var keyObject = collision.gameObject;
-            keyInHand = keyObject.GetComponent<KeyComp>();
-            keySprite = keyObject.GetComponent<SpriteRenderer>();
-            keyInHand.isBeingHold = true;
-            isHoldingKey = true;
+            keyInHand = collision.gameObject.GetComponent<KeyComp>();
+            
+            Debug.Log("*Key Pick-up Sound*");
         }
-    }
 
-    // Used to release key, or before the key is destroyed upon unlocking the door
-    public void ClearKeyFromGrabber()
-    {
-        keyInHand.isBeingHold = false;
-        isHoldingKey = false;
-        keySprite = null;
-        keyInHand = null;
+        // Ignore collisions with the map itself
+        if(collision.gameObject.name == "Tilemap")
+        {
+            Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), collision.collider);
+        }
     }
 }
