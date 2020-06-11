@@ -43,7 +43,7 @@ public class DoorComp : MonoBehaviour
     public void UpdateCollisionWithPlayer()
     {
         // Collision between player and door is ignored only when the door is unlocked and the door does not complete the level
-        GameObject player = GameObject.Find("Player Character");
+        GameObject player = GameObject.Find("TaveraLPlayerTest");
         GameObject playerGrabber = GameObject.Find("Grabber Child");
 
         BoxCollider2D doorCollider = gameObject.GetComponent<BoxCollider2D>();

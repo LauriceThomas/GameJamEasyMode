@@ -6,8 +6,8 @@ public class KeyComp : MonoBehaviour
 {    
     public DoorComp doorToUnlock;
     
-    [HideInInspector]
-    public Transform grabberTransform;              // The character's grabber. Where the key will be attached to in the character
+    //[HideInInspector]
+    private Transform grabberTransform;              // The character's grabber. Where the key will be attached to in the character
 
     private Quaternion originalRotation;            // Used to revert key's rotation to original state when it is not being hold
 
@@ -65,7 +65,7 @@ public class KeyComp : MonoBehaviour
     void UpdateCollisionWithPlayer()
     {
         // If the key is being hold, ignore collisions between the player and key. Else Reinstate collision
-        Physics2D.IgnoreCollision(this.GetComponent<BoxCollider2D>(), GameObject.Find("Player Character").GetComponent<BoxCollider2D>(), GrabberComp.keyInHand == this);
+        Physics2D.IgnoreCollision(this.GetComponent<BoxCollider2D>(), GameObject.Find("TaveraLPlayerTest").GetComponent<BoxCollider2D>(), GrabberComp.keyInHand == this);
         Physics2D.IgnoreCollision(this.GetComponent<BoxCollider2D>(), grabberTransform.gameObject.GetComponent<BoxCollider2D>(), GrabberComp.keyInHand == this);
     }
 }

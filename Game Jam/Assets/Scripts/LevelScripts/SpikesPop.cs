@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpikesPop : MonoBehaviour
 {
-    public Vector2 newPosition;
+    public Vector3 newPosition;
     public GameObject trapToMove;
 
     // Start is called before the first frame update
@@ -23,8 +23,13 @@ public class SpikesPop : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            // TODO Will Move elsewhere
+            if(trapToMove.transform.localPosition != newPosition)
+            {
+                Debug.Log("*Spikes Sound plays*");
+            }
+
             trapToMove.transform.localPosition = newPosition;
-            Debug.Log("*Spikes Sound plays*");
         }
     }
 }

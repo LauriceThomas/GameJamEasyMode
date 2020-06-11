@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ResurrectItem : MonoBehaviour
 {
+    public bool disappearAfterTouch = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,11 @@ public class ResurrectItem : MonoBehaviour
         {
             PlayerHealthComp playerHealth = collision.gameObject.GetComponent<PlayerHealthComp>();
             playerHealth.Resurrect();
-            Destroy(gameObject);
+
+            if(disappearAfterTouch)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

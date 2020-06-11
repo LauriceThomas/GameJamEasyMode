@@ -5,13 +5,11 @@ using UnityEngine;
 public class GrabberComp : MonoBehaviour
 {
     public static KeyComp keyInHand;                        // The current key component that the player is holding.
-    private Vector3 originalGrabberPosition;
 
     // Start is called before the first frame update
     void Start()
     {
         keyInHand = null;
-        originalGrabberPosition = gameObject.transform.localPosition;
 
         // Ignore Collision between player and grabber
         GameObject parentObj = gameObject.transform.parent.gameObject;
@@ -21,10 +19,6 @@ public class GrabberComp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Update grabber object position base on where the player is moving horizontally
-        float x = PlayerMovement.isFacingRight ? originalGrabberPosition.x : -originalGrabberPosition.x;
-        gameObject.transform.localPosition = new Vector3(x, originalGrabberPosition.y, originalGrabberPosition.z);
-
         // When the player releases the Left Shift button, release the key
         if(Input.GetKeyUp(KeyCode.LeftShift) && keyInHand)
         {
