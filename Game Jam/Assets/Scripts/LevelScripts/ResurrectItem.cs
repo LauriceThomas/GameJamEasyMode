@@ -22,8 +22,7 @@ public class ResurrectItem : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            PlayerHealthComp playerHealth = collision.gameObject.GetComponent<PlayerHealthComp>();
-            playerHealth.Resurrect();
+            PlayerHealthComp.Resurrect();
 
             if(disappearAfterTouch)
             {

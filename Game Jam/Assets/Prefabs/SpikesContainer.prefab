@@ -71,8 +71,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af2aeaaecdce146418a026caed4d185a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newPosition: {x: 0, y: 0}
+  newPosition: {x: 0, y: 0, z: 0}
   trapToMove: {fileID: 3477724957077879014}
+  spikesPopSpeed: 7
 --- !u!1 &3477724957077879014
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29a461057a2fb68498646a8eef782670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToApply: 100
 --- !u!61 &3477724957077879018
 BoxCollider2D:
   m_ObjectHideFlags: 0

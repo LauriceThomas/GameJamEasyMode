@@ -1,0 +1,1663 @@
+fileFormatVersion: 2
+guid: 537e66c14aa6d07408701ec674a6c634
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5354752071479110616
+    second: CastleWallsSpriteSheet_0
+  - first:
+      213: -4220383068473328919
+    second: CastleWallsSpriteSheet_1
+  - first:
+      213: 6136804303010649420
+    second: CastleWallsSpriteSheet_2
+  - first:
+      213: -8441218736705403508
+    second: CastleWallsSpriteSheet_3
+  - first:
+      213: -8378128123848233026
+    second: CastleWallsSpriteSheet_4
+  - first:
+      213: -8623369589175671653
+    second: CastleWallsSpriteSheet_5
+  - first:
+      213: 2389167997998989188
+    second: CastleWallsSpriteSheet_6
+  - first:
+      213: -3651231797188129860
+    second: CastleWallsSpriteSheet_7
+  - first:
+      213: 8643130226208078200
+    second: CastleWallsSpriteSheet_8
+  - first:
+      213: -7024145440140708346
+    second: CastleWallsSpriteSheet_9
+  - first:
+      213: -7504940871826716972
+    second: CastleWallsSpriteSheet_10
+  - first:
+      213: -1284189591461647727
+    second: CastleWallsSpriteSheet_11
+  - first:
+      213: 2917789540883069715
+    second: CastleWallsSpriteSheet_12
+  - first:
+      213: -2549257460753384841
+    second: CastleWallsSpriteSheet_13
+  - first:
+      213: 1878908454939420288
+    second: CastleWallsSpriteSheet_14
+  - first:
+      213: 5867377049919768560
+    second: CastleWallsSpriteSheet_15
+  - first:
+      213: -5262994730271988554
+    second: CastleWallsSpriteSheet_16
+  - first:
+      213: 3793207021535902417
+    second: CastleWallsSpriteSheet_17
+  - first:
+      213: 7110740769373120410
+    second: CastleWallsSpriteSheet_18
+  - first:
+      213: -1157574653147585311
+    second: CastleWallsSpriteSheet_19
+  - first:
+      213: -3454079247413394266
+    second: CastleWallsSpriteSheet_20
+  - first:
+      213: 8680055170521500435
+    second: CastleWallsSpriteSheet_21
+  - first:
+      213: 7339103194530414695
+    second: CastleWallsSpriteSheet_22
+  - first:
+      213: -8316179390399762044
+    second: CastleWallsSpriteSheet_23
+  - first:
+      213: 498297133587657616
+    second: CastleWallsSpriteSheet_24
+  - first:
+      213: 8443311812616643501
+    second: CastleWallsSpriteSheet_25
+  - first:
+      213: -4436366727164392484
+    second: CastleWallsSpriteSheet_26
+  - first:
+      213: -7098619961823007464
+    second: CastleWallsSpriteSheet_27
+  - first:
+      213: -830934020446014522
+    second: CastleWallsSpriteSheet_28
+  - first:
+      213: 1284744495992288834
+    second: CastleWallsSpriteSheet_29
+  - first:
+      213: 4844097545163784706
+    second: CastleWallsSpriteSheet_30
+  - first:
+      213: 6297486886769709104
+    second: CastleWallsSpriteSheet_31
+  - first:
+      213: 4627562493786730848
+    second: CastleWallsSpriteSheet_32
+  - first:
+      213: 6782297930072381308
+    second: CastleWallsSpriteSheet_33
+  - first:
+      213: 3236316389232897236
+    second: CastleWallsSpriteSheet_34
+  - first:
+      213: 8454959119074887808
+    second: CastleWallsSpriteSheet_35
+  - first:
+      213: 123346039770977930
+    second: CastleWallsSpriteSheet_36
+  - first:
+      213: -3354893021751239192
+    second: CastleWallsSpriteSheet_37
+  - first:
+      213: 7298078365608351427
+    second: CastleWallsSpriteSheet_38
+  - first:
+      213: 1692597549300222821
+    second: CastleWallsSpriteSheet_39
+  - first:
+      213: -5916504691149159403
+    second: CastleWallsSpriteSheet_40
+  - first:
+      213: 2051124946551911367
+    second: CastleWallsSpriteSheet_41
+  - first:
+      213: 1587193995887575422
+    second: CastleWallsSpriteSheet_42
+  - first:
+      213: 7483679121963771588
+    second: CastleWallsSpriteSheet_43
+  - first:
+      213: -6962889513659955075
+    second: CastleWallsSpriteSheet_44
+  - first:
+      213: -5709895997527963740
+    second: CastleWallsSpriteSheet_45
+  - first:
+      213: 5283120503230503045
+    second: CastleWallsSpriteSheet_46
+  - first:
+      213: 5724707698160163549
+    second: CastleWallsSpriteSheet_47
+  - first:
+      213: 8914717090966468000
+    second: CastleWallsSpriteSheet_48
+  - first:
+      213: 8294821921682965961
+    second: CastleWallsSpriteSheet_49
+  - first:
+      213: -8082829721085049981
+    second: CastleWallsSpriteSheet_50
+  - first:
+      213: 1416695341135537222
+    second: CastleWallsSpriteSheet_51
+  - first:
+      213: -4326108112371733600
+    second: CastleWallsSpriteSheet_52
+  - first:
+      213: 3564275374422604333
+    second: CastleWallsSpriteSheet_53
+  - first:
+      213: -1788134034968874087
+    second: CastleWallsSpriteSheet_54
+  - first:
+      213: -2068598501590259779
+    second: CastleWallsSpriteSheet_55
+  - first:
+      213: 6910226811782042227
+    second: CastleWallsSpriteSheet_56
+  - first:
+      213: 8815404280216351645
+    second: CastleWallsSpriteSheet_57
+  - first:
+      213: 6854598715376971756
+    second: CastleWallsSpriteSheet_58
+  - first:
+      213: 5546734664357550178
+    second: CastleWallsSpriteSheet_59
+  - first:
+      213: 6726037760291665195
+    second: CastleWallsSpriteSheet_60
+  - first:
+      213: 2792947240424368874
+    second: CastleWallsSpriteSheet_61
+  - first:
+      213: 8300048733557265894
+    second: CastleWallsSpriteSheet_62
+  - first:
+      213: 1976626358334886796
+    second: CastleWallsSpriteSheet_63
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 286
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9100425c0a5f05c4592063b871c0f1ae
+      internalID: 5354752071479110616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 286
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b111c58dc86784c995beef449172be
+      internalID: -4220383068473328919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 286
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47de3de8dd3f33540895bdcf6a0f96f3
+      internalID: 6136804303010649420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 286
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907a3f2aa62b002489654766cd640f2d
+      internalID: -8441218736705403508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 286
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8348f1bba5b0f0940a62270dc8ee562d
+      internalID: -8378128123848233026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 286
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a34a2df0955e8a40901622c8e449996
+      internalID: -8623369589175671653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 286
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6902c319b1169543860f9cbe5c61e92
+      internalID: 2389167997998989188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 286
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4149f710f5f06a7439d0436c545c37f0
+      internalID: -3651231797188129860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ecc751fbb2c2a84cb47bd09f882c6bc
+      internalID: 8643130226208078200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 252
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547ae16014b57774990ead8691ae7e95
+      internalID: -7024145440140708346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 252
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846a18333f9daef45bfd7bb8e915e9a3
+      internalID: -7504940871826716972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 252
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eabd7defef249a4588e6fdf9679b282
+      internalID: -1284189591461647727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 252
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22941b5129a3ea44a9ebd2075c8c42fe
+      internalID: 2917789540883069715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 252
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b7a2cdd56932d4185b7369fd5c8e37
+      internalID: -2549257460753384841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 252
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff0cdce7fb727d479d1cb6f2c175d06
+      internalID: 1878908454939420288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 252
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69a8b7b136d1054c9c35f644f060310
+      internalID: 5867377049919768560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03347ac771385f47848167c55d25899
+      internalID: -5262994730271988554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 218
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524e5c864820a3049902d52eb69ee487
+      internalID: 3793207021535902417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 218
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddaf6309fa1f3f41a497af682868c47
+      internalID: 7110740769373120410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 218
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66ccf485903d5b4888f3dde127e006f
+      internalID: -1157574653147585311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 218
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1999a70e0930ee45939951b65f924b1
+      internalID: -3454079247413394266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 218
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff26bf1dc0d485a4d952b9be1f8368db
+      internalID: 8680055170521500435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 218
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f7c0afae415b346962dd28d739ae35
+      internalID: 7339103194530414695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 218
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b3c25c2c204d144a390e8c01838d9e
+      internalID: -8316179390399762044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31bf18d072fbe042990f60aa46a1ae1
+      internalID: 498297133587657616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 184
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30102c5c6413bf4e8f1807e1c0516d7
+      internalID: 8443311812616643501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 184
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a93ed8b067daa344a9469ebda4b1713
+      internalID: -4436366727164392484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 184
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961a398a95d04cb42847e1e834bcd03d
+      internalID: -7098619961823007464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 184
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a5ce7fcdcfe514e996bd4022a6345b
+      internalID: -830934020446014522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 184
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f339c38c2eb334bac5148480c0c38b
+      internalID: 1284744495992288834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 184
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d02c833cec66f4396d8b9dd7bb0685
+      internalID: 4844097545163784706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 184
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed87a930d1aa8714192b641c449b7b2f
+      internalID: 6297486886769709104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02bde9b162ab9147b9abf38b1100e4e
+      internalID: 4627562493786730848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 150
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b262d706be72ec478b9914cef4d4add
+      internalID: 6782297930072381308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 150
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e947ae4331ccaa14aaffa8ce073ebbaf
+      internalID: 3236316389232897236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 150
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7118b3add42cce24a969085b40012017
+      internalID: 8454959119074887808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 150
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63324650e30a974cb272140778c5a0c
+      internalID: 123346039770977930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 150
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7acf0b1c88af2a84aa94bd2df82a25ed
+      internalID: -3354893021751239192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 150
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6538bde1091be4f4e8290490c63b2c49
+      internalID: 7298078365608351427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 150
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1b17cd193a56146869e5d22b25c956
+      internalID: 1692597549300222821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 116
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71e23d468eff3646a3ce83cf7a8fe34
+      internalID: -5916504691149159403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 116
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fb942b6eb6f414395e1c1c2800526c
+      internalID: 2051124946551911367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 116
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70e38f138e405246a6555c860a81efe
+      internalID: 1587193995887575422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 116
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2011438bcb3184419c768f56500e846
+      internalID: 7483679121963771588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 116
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b647788f4b59f94d97ad8603c12c490
+      internalID: -6962889513659955075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 116
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd560af1de71e2d4fbfcdef4ba597cc3
+      internalID: -5709895997527963740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 116
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c46b0ce869a9a04e81b8c2ef9f29eeb
+      internalID: 5283120503230503045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 116
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4213c73829c85ea4794f70b8a994b61c
+      internalID: 5724707698160163549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 82
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba3cb3c28e681a489c5da68f78ee0c1
+      internalID: 8914717090966468000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 82
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b893ca6752e5d49804a051b5b83bf2
+      internalID: 8294821921682965961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 82
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a638db1f6593cf04f83949229097ffdc
+      internalID: -8082829721085049981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 82
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce1fe665d77e354f972b30442ffea50
+      internalID: 1416695341135537222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 82
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d00f142ab3c5c45816658f2e30d072
+      internalID: -4326108112371733600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 82
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8617077ad9768a48a184b61702cc2af
+      internalID: 3564275374422604333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 82
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc205ea1d8a613042bb351119f274e60
+      internalID: -1788134034968874087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 82
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483c5978f97877b40b787d8c9a2e828d
+      internalID: -2068598501590259779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591b0ac0e78c0654ebf3952d9c84f6fe
+      internalID: 6910226811782042227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 48
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a69ce33a459f1448789afa19c8c1b2
+      internalID: 8815404280216351645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 48
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd609b1b05f0fd4c9dfca9eab488b3e
+      internalID: 6854598715376971756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 48
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa1268ab6d9fd34a92b029c059c2232
+      internalID: 5546734664357550178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 48
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ca61519531c034da4972d7df8f99b9
+      internalID: 6726037760291665195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 48
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b58c8dac89216b499eb6378e6fbc582
+      internalID: 2792947240424368874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 48
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f01439df4202534aa93bcb289794327
+      internalID: 8300048733557265894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsSpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 48
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e59f7f1e80ae44f82bab583eeae92f
+      internalID: 1976626358334886796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

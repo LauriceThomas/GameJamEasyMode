@@ -6,9 +6,7 @@ public class KeyComp : MonoBehaviour
 {    
     public DoorComp doorToUnlock;
     
-    //[HideInInspector]
     private Transform grabberTransform;              // The character's grabber. Where the key will be attached to in the character
-
     private Quaternion originalRotation;            // Used to revert key's rotation to original state when it is not being hold
 
     // Start is called before the first frame update
