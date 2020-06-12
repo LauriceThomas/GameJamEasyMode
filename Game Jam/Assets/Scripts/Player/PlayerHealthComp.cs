@@ -51,6 +51,7 @@ public class PlayerHealthComp : MonoBehaviour
         if (isInDeathMode || hasResKey) { return; }
 
         isInDeathMode = true;
+        Debug.Log("*Play Death Mode Sound*");
     }
 
     public static void Resurrect()
