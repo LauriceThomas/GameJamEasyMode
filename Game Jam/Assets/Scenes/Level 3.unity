@@ -221,6 +221,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4598700}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &260899734 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4426919000183339863, guid: 1882c00f6ed38f44b938dffc9b675ab6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1216075131}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b072b0e60430dd4eaad831b18036fd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &671002863
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +289,7 @@ GameObject:
   - component: {fileID: 970452610}
   - component: {fileID: 970452609}
   - component: {fileID: 970452611}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1745,5 +1757,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 153011472317888415, guid: ecf2aaf078a9c924e833cf67f76f94f4,
+        type: 3}
+      propertyPath: doorToUnlock
+      value: 
+      objectReference: {fileID: 260899734}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecf2aaf078a9c924e833cf67f76f94f4, type: 3}
