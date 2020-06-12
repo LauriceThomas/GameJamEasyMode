@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 153011472317888415}
   - component: {fileID: -5755533365924485991}
   m_Layer: 0
-  m_Name: Regular Key 1
-  m_TagString: Untagged
+  m_Name: Resurrection Key
+  m_TagString: ResKey
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

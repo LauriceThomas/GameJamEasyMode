@@ -127,5 +127,6 @@ public class PlayerMovement : MonoBehaviour
         ghostModeSpeed = 6f;
         isPlayerDead = false;
         isFacingRight = true;
+        PlayerHealthComp.Resurrect();
     }
 }

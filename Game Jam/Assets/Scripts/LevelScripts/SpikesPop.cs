@@ -6,6 +6,8 @@ public class SpikesPop : MonoBehaviour
 {
     public Vector3 newPosition;
     public GameObject trapToMove;
+    bool isActivated = false;
+    public float spikesPopSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -16,20 +18,18 @@ public class SpikesPop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(isActivated && trapToMove.transform.localPosition != newPosition)
+        {
+            trapToMove.transform.localPosition = Vector3.Lerp(trapToMove.transform.localPosition, newPosition, spikesPopSpeed * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "Player" && !isActivated)
         {
-            // TODO Will Move elsewhere
-            if(trapToMove.transform.localPosition != newPosition)
-            {
-                Debug.Log("*Spikes Sound plays*");
-            }
-
-            trapToMove.transform.localPosition = newPosition;
+            Debug.Log("*Play Spikes sound*");
+            isActivated = true;
         }
     }
 }
