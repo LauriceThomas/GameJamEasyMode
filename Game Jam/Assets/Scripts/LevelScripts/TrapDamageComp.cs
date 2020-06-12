@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class TrapDamageComp : MonoBehaviour
 {
-    public float damageToApply = 100;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +20,7 @@ public class TrapDamageComp : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            PlayerHealthComp playerHealth = collision.gameObject.GetComponent<PlayerHealthComp>();
-
-            if(playerHealth)
-            {
-                playerHealth.ReceiveDamage(damageToApply);
-            }
+            PlayerHealthComp.KillPlayer();
         }
     }
 }

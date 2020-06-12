@@ -5,15 +5,24 @@ using UnityEngine.UI;
 
 public class PlayerHealthComp : MonoBehaviour
 {
-    public float health;
-    public float maxHealth = 100;
     public Image healthbar;                             // Manipulate HP Bar in UI
     public static bool isInDeathMode = false;           // use 'PlayerHealthComp.isInDeathMode' to access this variable in other files 
+    public Sprite ghostTorsoSprite;
+    public Sprite aliveTorsoSprite;
+
+
+    private SpriteRenderer spriteRenTorso;
+    private SpriteRenderer spriteRenLeftArm;
+    private SpriteRenderer spriteRenRightArm;
+    private SpriteRenderer spriteRenLegs;
 
     // Start is called before the first frame update
     void Start()
     {
-        health = maxHealth;
+        spriteRenLegs = gameObject.transform.Find("Legs").GetComponent<SpriteRenderer>();
+        spriteRenLeftArm = gameObject.transform.Find("L Arm").GetComponent<SpriteRenderer>();
+        spriteRenRightArm = gameObject.transform.Find("R Arm").GetComponent<SpriteRenderer>();
+        spriteRenTorso = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -22,48 +31,43 @@ public class PlayerHealthComp : MonoBehaviour
         // Inflict self damage
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            ReceiveDamage(20);
+            KillPlayer();
         }
 
         // Update HP Bar in UI
         if (healthbar)
         {
-            healthbar.fillAmount = health / maxHealth;
-            healthbar.color = (health > (maxHealth / 4) ? Color.green : Color.red);
+            healthbar.fillAmount = !isInDeathMode ? 1 : 0;
+            healthbar.color = !isInDeathMode ? Color.green : Color.red;
         }
+
+        UpdateSprites();
     }
 
-    public void ReceiveDamage(float damage)
+    public static void KillPlayer()
     {
-        if (health <= 0) { return; }
+        bool hasResKey = GrabberComp.keyInHand && GrabberComp.keyInHand.tag == "ResKey";
 
-        // Prevent HP from going less than 0 and over max health
-        float healthDelta = health - damage;
-        health = Mathf.Clamp(healthDelta, 0, maxHealth);
+        if (isInDeathMode || hasResKey) { return; }
 
-        if(health <= 0)
-        {
-            isInDeathMode = true;
-            Debug.Log("*Play Death Mode Sound*");
-        }
+        isInDeathMode = true;
     }
 
-    public void GainHealth(float healthAdded)
-    {
-        // Prevent HP from going less than 0 and over max health
-        float healthDelta = health + healthAdded;
-        health = Mathf.Clamp(healthDelta, 0, maxHealth);
-
-        isInDeathMode = false;
-    }
-
-    public void Resurrect()
+    public static void Resurrect()
     {
         if(isInDeathMode)
         {
             Debug.Log("*Play Alive Mode Sound*");
-            health = maxHealth;
             isInDeathMode = false;
         }
+    }
+
+    private void UpdateSprites()
+    {
+        spriteRenLeftArm.enabled = !isInDeathMode;
+        spriteRenRightArm.enabled = !isInDeathMode;
+        spriteRenLegs.enabled = !isInDeathMode;
+
+        spriteRenTorso.sprite = isInDeathMode ? ghostTorsoSprite : aliveTorsoSprite;
     }
 }

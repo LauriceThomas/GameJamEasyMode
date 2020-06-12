@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: e3e9d02ed9e359f49b4341bfcb08d877
   - enabled: 1
+    path: Assets/Scenes/TaveraWorkScene.unity
+    guid: 05f9f0e6320d10646a14847ee8974961
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1

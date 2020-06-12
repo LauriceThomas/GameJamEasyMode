@@ -7,7 +7,6 @@ public class DoorComp : MonoBehaviour
 {
     public bool isUnlocked = false;
     public bool goToNextScene = true;
-    public int nextScene;
     public Sprite doorOpenSprite;
     public Sprite doorCloseSprite;
 
@@ -28,16 +27,24 @@ public class DoorComp : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            CompleteLevel();
+            if(!CanCompleteLevel())
+            {
+                Debug.Log("*Door Lock Sound Plays*");
+            }
         }
     }
 
-    public void CompleteLevel()
+    public bool CanCompleteLevel()
     {
         if(goToNextScene && isUnlocked)
         {
-            SceneManager.LoadScene(nextScene);
+            PlayerHealthComp.Resurrect();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            
+            return true;
         }
+
+        return false;
     }
 
     public void UpdateCollisionWithPlayer()
