@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b072b0e60430dd4eaad831b18036fd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 1
+  isUnlocked: 0
   goToNextScene: 1
   nextScene: 0
   doorOpenSprite: {fileID: 21300000, guid: 96471b914e458d646a4fc17e23cfbc73, type: 3}
