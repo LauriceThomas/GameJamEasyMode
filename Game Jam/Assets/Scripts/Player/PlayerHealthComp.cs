@@ -54,7 +54,7 @@ public class PlayerHealthComp : MonoBehaviour
     }
 
     public static void Resurrect()
-    {
+    {        
         if(isInDeathMode)
         {
             Debug.Log("*Play Alive Mode Sound*");
@@ -64,10 +64,13 @@ public class PlayerHealthComp : MonoBehaviour
 
     private void UpdateSprites()
     {
+        // Alive player has 4 sprite renderers - Dead player has one
+        // Toggles when player health state changes
         spriteRenLeftArm.enabled = !isInDeathMode;
         spriteRenRightArm.enabled = !isInDeathMode;
         spriteRenLegs.enabled = !isInDeathMode;
         spriteRenTorso.enabled = !isInDeathMode;
+
         SpriteRenDeath.enabled = isInDeathMode;
     }
 }
