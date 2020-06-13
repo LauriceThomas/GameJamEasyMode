@@ -16,7 +16,7 @@ TagManager:
   - 
   - 
   - Ground
-  - 
+  - Background
   - 
   - 
   - 
@@ -40,6 +40,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 4002223911
+    locked: 0
+  - name: Objects
+    uniqueID: 752848455
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -54,13 +60,4 @@ TagManager:
     locked: 0
   - name: R Arm
     uniqueID: 3313115891
-    locked: 0
-  - name: Objects
-    uniqueID: 752848455
-    locked: 0
-  - name: Scenery
-    uniqueID: 1376086997
-    locked: 0
-  - name: Background
-    uniqueID: 4002223911
     locked: 0
