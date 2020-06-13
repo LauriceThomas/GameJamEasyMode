@@ -56,7 +56,7 @@ public class DoorComp : MonoBehaviour
             int nextScene = currentScene + 1 >= sceneCount ? 0 : currentScene + 1;
             
             SceneManager.LoadScene(nextScene);
-            SoundManager.instance.PlayBackground(nextScene);
+            SoundManager.instance.PlayBackground();
         }
     }
 }

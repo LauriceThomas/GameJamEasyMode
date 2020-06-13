@@ -36,7 +36,6 @@ public class KeyComp : MonoBehaviour
             Destroy(gameObject);
 
             // TODO Maybe add a delay to play the sound fully and/or update the sprite of the door
-            Debug.Log("*Door Open Sound*");
             SoundManager.instance.PlaySound(SoundManager.SoundName.doorOpen);
             // Update door status
             doorToUnlock.isUnlocked = true;

@@ -11,7 +11,7 @@ public class BaseSound
 
     [Range(min: 0, max: 1)]
     public float volume;
-    
+
     [HideInInspector]
     public AudioSource audioSource;
 }
@@ -25,19 +25,19 @@ public class SoundEffect : BaseSound
 [System.Serializable]
 public class BackgroundTheme : BaseSound
 {
-    public int levelIndex;
+    public float pauseVolume = 0.65f;
 }
 
 public class SoundManager : MonoBehaviour
 {
     public enum SoundName
     {
-        alive, dead, doorOpen, doorLock
+        alive, dead, doorOpen, doorLock, spikes, key
     };
 
     public static SoundManager instance;
     public SoundEffect[] soundEffects;
-    public BackgroundTheme[] backgroundThemes;
+    public BackgroundTheme backgroundSong;
 
     void Awake()
     {
@@ -54,7 +54,7 @@ public class SoundManager : MonoBehaviour
         }
 
         // Add a new Audio Source Component to game object for each sound effect with all information set on Unity
-        foreach(var s in soundEffects)
+        foreach (var s in soundEffects)
         {
             s.audioSource = gameObject.AddComponent<AudioSource>();
             s.audioSource.clip = s.audioClip;
@@ -62,37 +62,21 @@ public class SoundManager : MonoBehaviour
             s.audioSource.loop = s.loop;
         }
 
-        // Do the same with background themes
-        foreach(var b in backgroundThemes)
-        {
-            b.audioSource = gameObject.AddComponent<AudioSource>();
-            b.audioSource.clip = b.audioClip;
-            b.audioSource.volume = b.volume;
-            b.audioSource.playOnAwake  = false;
-            b.audioSource.loop= b.loop;
-        }
+        backgroundSong.audioSource = gameObject.AddComponent<AudioSource>();
+        backgroundSong.audioSource.clip = backgroundSong.audioClip;
+        backgroundSong.audioSource.loop = backgroundSong.loop;
+        backgroundSong.audioSource.volume = backgroundSong.volume;
+
+        PlayBackground();
     }
 
     // Plays the first audio clip that matches with the level index. Will notify if there's no audio clips, or more than one for a scene  
-    public void PlayBackground(int levelIndex)
+    public void PlayBackground()
     {
-        StopAllBackgroundMusic();
-
-        BackgroundTheme[] backgroundTheme = backgroundThemes
-            .Where(x => x.levelIndex == levelIndex).ToArray();
-
-        if(backgroundTheme == null || backgroundTheme.Length == 0)
+        if(!backgroundSong.audioSource.isPlaying)
         {
-            Debug.Log("No background theme found for Scene: " + levelIndex);
-            return;
+            backgroundSong.audioSource.Play();
         }
-        
-        if(backgroundTheme.Length > 1)
-        {
-            Debug.Log("More than one background theme was set for scene: " + levelIndex);
-        }
-
-        backgroundTheme[0].audioSource.Play();
     }
 
     // Looks for first specified sound-effect by enum name
@@ -100,32 +84,18 @@ public class SoundManager : MonoBehaviour
     {
         SoundEffect soundCombo = soundEffects.FirstOrDefault(x => x.soundName == soundName);
 
-        if(soundCombo == null) { return; }
+        if (soundCombo == null) { return; }
 
         soundCombo.audioSource.Play();
     }
 
-    public void StopAllBackgroundMusic()
-    {
-        foreach(var b in backgroundThemes)
-        {
-            b.audioSource.Stop();
-        }
-    }
-
     public void LowerBackgroundMusicVolume()
     {
-        foreach (var b in backgroundThemes)
-        {
-            b.audioSource.volume = 0.65f;
-        }
+        backgroundSong.audioSource.volume = backgroundSong.pauseVolume;
     }
 
     public void RaiseBackgroundMusicVolume()
     {
-        foreach (var b in backgroundThemes)
-        {
-            b.audioSource.volume = 1;
-        }
+        backgroundSong.audioSource.volume = backgroundSong.volume;
     }
 }

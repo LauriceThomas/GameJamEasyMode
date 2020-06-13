@@ -32,6 +32,7 @@ public class GrabberComp : MonoBehaviour
         if(collision.gameObject.GetComponent<KeyComp>() && Input.GetKey(KeyCode.LeftShift) && !keyInHand)
         {
             keyInHand = collision.gameObject.GetComponent<KeyComp>();
+            SoundManager.instance.PlaySound(SoundManager.SoundName.key);
         }
 
         // Ignore collisions with the map itself
