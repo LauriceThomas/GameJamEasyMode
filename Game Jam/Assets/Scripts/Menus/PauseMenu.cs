@@ -18,7 +18,7 @@ public class PauseMenu : MonoBehaviour
     void Awake()
     {
         PauseCanvas = GetComponent<Canvas>();
-        ControlsCanvas = FindObjectOfType<Canvas>();
+        //ControlsCanvas = FindObjectOfType<Canvas>();
         isRestarting = false;
         playerMove = FindObjectOfType<PlayerMovement>();
         ResumeGame();
@@ -67,7 +67,7 @@ public class PauseMenu : MonoBehaviour
     public void SetRestartValues()
     {
         PauseCanvas = GetComponent<Canvas>();
-        ControlsCanvas = FindObjectOfType<Canvas>();
+        //ControlsCanvas = FindObjectOfType<Canvas>();
         playerMove = FindObjectOfType<PlayerMovement>();
         isRestarting = false;
         playerMove.ResetValues();

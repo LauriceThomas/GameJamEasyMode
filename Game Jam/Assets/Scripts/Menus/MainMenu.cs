@@ -17,7 +17,7 @@ public class MainMenu : MonoBehaviour
     void Awake()
     {
         StartCanvas = GetComponent<Canvas>();
-        ControlsCanvas = FindObjectOfType<Canvas>();
+        
     }
 
     public void StartGameButtonPressed()
