@@ -50,6 +50,7 @@ public class PlayerHealthComp : MonoBehaviour
         if (isInDeathMode || hasResKey) { return; }
 
         isInDeathMode = true;
+        SoundManager.instance.PlaySound(SoundManager.SoundName.dead);
         Debug.Log("*Play Death Mode Sound*");
     }
 
@@ -57,6 +58,7 @@ public class PlayerHealthComp : MonoBehaviour
     {        
         if(isInDeathMode)
         {
+            SoundManager.instance.PlaySound(SoundManager.SoundName.alive);
             Debug.Log("*Play Alive Mode Sound*");
             isInDeathMode = false;
         }

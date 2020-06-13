@@ -20,11 +20,17 @@ public class MainMenu : MonoBehaviour
         ControlsCanvas = FindObjectOfType<Canvas>();
     }
 
+    public void Start()
+    {
+        SoundManager.instance.PlayBackground(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void StartGameButtonPressed()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SoundManager.instance.PlayBackground(SceneManager.GetActiveScene().buildIndex + 1);
     }
-  
+
     //Opens Controls screen
     public void ControlsButtonPressed()
     {

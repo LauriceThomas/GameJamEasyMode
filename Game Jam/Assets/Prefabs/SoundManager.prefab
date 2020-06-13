@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7978379936628855731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7978379936628855733}
+  - component: {fileID: 7978379936628855730}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7978379936628855733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7978379936628855731}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -18.62, y: -3.4676023, z: -21.370789}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7978379936628855730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7978379936628855731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d5d232a5a844f448920536a6b9b07dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffects:
+  - audioClip: {fileID: 8300000, guid: ace932a1cd8e0514eb3b8457a0ea638c, type: 3}
+    loop: 0
+    volume: 1
+    audioSource: {fileID: 0}
+    soundName: 0
+  - audioClip: {fileID: 8300000, guid: cdb8f44202ad29d4b8ee81e3d81e0f9d, type: 3}
+    loop: 0
+    volume: 1
+    audioSource: {fileID: 0}
+    soundName: 1
+  - audioClip: {fileID: 8300000, guid: 573a6a4cf78b3a64eb871568ad898e94, type: 3}
+    loop: 0
+    volume: 1
+    audioSource: {fileID: 0}
+    soundName: 2
+  - audioClip: {fileID: 8300000, guid: 45707420c1f3a394dbf59b50d3b13ea2, type: 3}
+    loop: 0
+    volume: 1
+    audioSource: {fileID: 0}
+    soundName: 3
+  backgroundThemes: []
