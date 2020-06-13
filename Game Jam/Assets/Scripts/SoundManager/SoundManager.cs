@@ -58,8 +58,8 @@ public class SoundManager : MonoBehaviour
         {
             s.audioSource = gameObject.AddComponent<AudioSource>();
             s.audioSource.clip = s.audioClip;
-            s.audioSource.volume = 1;
-            s.audioSource.playOnAwake = false;
+            s.audioSource.volume = s.volume;
+            s.audioSource.loop = s.loop;
         }
 
         // Do the same with background themes
@@ -68,6 +68,7 @@ public class SoundManager : MonoBehaviour
             b.audioSource = gameObject.AddComponent<AudioSource>();
             b.audioSource.clip = b.audioClip;
             b.audioSource.volume = b.volume;
+            b.audioSource.playOnAwake  = false;
             b.audioSource.loop= b.loop;
         }
     }
