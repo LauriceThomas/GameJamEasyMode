@@ -32,7 +32,6 @@ public class DoorComp : MonoBehaviour
         {
             if(playSoundOnce && alreadyPlayed) { return; }
 
-            Debug.Log("*Door Lock Sound Plays*");
             SoundManager.instance.PlaySound(SoundManager.SoundName.doorLock);
             alreadyPlayed = true;
         }
@@ -51,8 +50,13 @@ public class DoorComp : MonoBehaviour
         if(goToNextScene && isUnlocked)
         {
             PlayerHealthComp.Resurrect();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            SoundManager.instance.PlayBackground(SceneManager.GetActiveScene().buildIndex + 1);
+
+            int currentScene = SceneManager.GetActiveScene().buildIndex;
+            int sceneCount = SceneManager.sceneCountInBuildSettings;
+            int nextScene = currentScene + 1 >= sceneCount ? 0 : currentScene + 1;
+            
+            SceneManager.LoadScene(nextScene);
+            SoundManager.instance.PlayBackground(nextScene);
         }
     }
 }
