@@ -17,18 +17,17 @@ public class MainMenu : MonoBehaviour
     void Awake()
     {
         StartCanvas = GetComponent<Canvas>();
-        
     }
 
     public void Start()
     {
-        SoundManager.instance.PlayBackground(SceneManager.GetActiveScene().buildIndex);
+        SoundManager.instance.PlayBackground();
     }
 
     public void StartGameButtonPressed()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        SoundManager.instance.PlayBackground(SceneManager.GetActiveScene().buildIndex + 1);
+        SoundManager.instance.PlayBackground();
     }
 
     //Opens Controls screen

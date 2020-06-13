@@ -64,4 +64,19 @@ MonoBehaviour:
     volume: 1
     audioSource: {fileID: 0}
     soundName: 3
-  backgroundThemes: []
+  - audioClip: {fileID: 8300000, guid: ad8883c1495d918499d6ce26f5eed6ec, type: 3}
+    loop: 0
+    volume: 1
+    audioSource: {fileID: 0}
+    soundName: 4
+  - audioClip: {fileID: 8300000, guid: 6f87681ddb8f631439be661061ed6f00, type: 3}
+    loop: 0
+    volume: 1
+    audioSource: {fileID: 0}
+    soundName: 5
+  backgroundSong:
+    audioClip: {fileID: 8300000, guid: eb1a4c8ac0752994a90295bfb9318ccc, type: 3}
+    loop: 1
+    volume: 0.35
+    audioSource: {fileID: 0}
+    pauseVolume: 0.1

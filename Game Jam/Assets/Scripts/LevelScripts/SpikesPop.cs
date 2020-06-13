@@ -29,6 +29,7 @@ public class SpikesPop : MonoBehaviour
         if(collision.gameObject.tag == "Player" && !isActivated)
         {
             isActivated = true;
+            SoundManager.instance.PlaySound(SoundManager.SoundName.spikes);
         }
     }
 }
