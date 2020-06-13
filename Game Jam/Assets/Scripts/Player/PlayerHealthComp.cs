@@ -7,14 +7,12 @@ public class PlayerHealthComp : MonoBehaviour
 {
     public Image healthbar;                             // Manipulate HP Bar in UI
     public static bool isInDeathMode = false;           // use 'PlayerHealthComp.isInDeathMode' to access this variable in other files 
-    public Sprite ghostTorsoSprite;
-    public Sprite aliveTorsoSprite;
-
 
     private SpriteRenderer spriteRenTorso;
     private SpriteRenderer spriteRenLeftArm;
     private SpriteRenderer spriteRenRightArm;
     private SpriteRenderer spriteRenLegs;
+    private SpriteRenderer SpriteRenDeath;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +20,7 @@ public class PlayerHealthComp : MonoBehaviour
         spriteRenLegs = gameObject.transform.Find("Legs").GetComponent<SpriteRenderer>();
         spriteRenLeftArm = gameObject.transform.Find("L Arm").GetComponent<SpriteRenderer>();
         spriteRenRightArm = gameObject.transform.Find("R Arm").GetComponent<SpriteRenderer>();
+        SpriteRenDeath = gameObject.transform.Find("Sprite Dead").GetComponent<SpriteRenderer>();
         spriteRenTorso = gameObject.GetComponent<SpriteRenderer>();
     }
 
@@ -51,13 +50,15 @@ public class PlayerHealthComp : MonoBehaviour
         if (isInDeathMode || hasResKey) { return; }
 
         isInDeathMode = true;
+        SoundManager.instance.PlaySound(SoundManager.SoundName.dead);
         Debug.Log("*Play Death Mode Sound*");
     }
 
     public static void Resurrect()
-    {
+    {        
         if(isInDeathMode)
         {
+            SoundManager.instance.PlaySound(SoundManager.SoundName.alive);
             Debug.Log("*Play Alive Mode Sound*");
             isInDeathMode = false;
         }
@@ -65,10 +66,13 @@ public class PlayerHealthComp : MonoBehaviour
 
     private void UpdateSprites()
     {
+        // Alive player has 4 sprite renderers - Dead player has one
+        // Toggles when player health state changes
         spriteRenLeftArm.enabled = !isInDeathMode;
         spriteRenRightArm.enabled = !isInDeathMode;
         spriteRenLegs.enabled = !isInDeathMode;
+        spriteRenTorso.enabled = !isInDeathMode;
 
-        spriteRenTorso.sprite = isInDeathMode ? ghostTorsoSprite : aliveTorsoSprite;
+        SpriteRenDeath.enabled = isInDeathMode;
     }
 }

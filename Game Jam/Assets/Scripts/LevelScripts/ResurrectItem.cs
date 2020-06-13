@@ -23,8 +23,19 @@ public class ResurrectItem : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             PlayerHealthComp.Resurrect();
-
             if(disappearAfterTouch)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            PlayerHealthComp.Resurrect();
+            if (disappearAfterTouch)
             {
                 Destroy(gameObject);
             }
