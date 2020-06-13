@@ -112,4 +112,20 @@ public class SoundManager : MonoBehaviour
             b.audioSource.Stop();
         }
     }
+
+    public void LowerBackgroundMusicVolume()
+    {
+        foreach (var b in backgroundThemes)
+        {
+            b.audioSource.volume = 0.65f;
+        }
+    }
+
+    public void RaiseBackgroundMusicVolume()
+    {
+        foreach (var b in backgroundThemes)
+        {
+            b.audioSource.volume = 1;
+        }
+    }
 }

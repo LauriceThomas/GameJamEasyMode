@@ -12,6 +12,7 @@ public class PauseMenu : MonoBehaviour
     public Canvas PauseCanvas;
     public Canvas ControlsCanvas;
     public PlayerMovement playerMove;
+    public SoundManager Sound;
     private bool isRestarting;
     
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class PauseMenu : MonoBehaviour
         PauseCanvas = GetComponent<Canvas>();
         //ControlsCanvas = FindObjectOfType<Canvas>();
         isRestarting = false;
+        Sound = FindObjectOfType<SoundManager>();
         playerMove = FindObjectOfType<PlayerMovement>();
         ResumeGame();
     }
@@ -54,6 +56,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         PauseCanvas.enabled = false;
         ControlsCanvas.enabled = false;
+        Sound.RaiseBackgroundMusicVolume();
     }
 
     //Stops Time scale
@@ -61,6 +64,7 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 0;
         PauseCanvas.enabled = true;
+        Sound.LowerBackgroundMusicVolume();
     }
 
  
