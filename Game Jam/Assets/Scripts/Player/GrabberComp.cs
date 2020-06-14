@@ -10,35 +10,30 @@ public class GrabberComp : MonoBehaviour
     void Start()
     {
         keyInHand = null;
-
-        // Ignore Collision between player and grabber
-        GameObject parentObj = gameObject.transform.parent.gameObject;
-        Physics2D.IgnoreCollision(gameObject.GetComponent<BoxCollider2D>(), parentObj.GetComponent<BoxCollider2D>());
     }
 
     // Update is called once per frame
     void Update()
     {
         // When the player releases the Left Shift button, release the key
-        if(Input.GetKeyUp(KeyCode.LeftShift) && keyInHand)
+        if (Input.GetKeyUp(KeyCode.LeftShift) && keyInHand)
         {
             keyInHand = null;
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    // Only grab a key when the player is currently not holding another one, and while they are holding Left Shift button
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Only grab a key when the player is currently not holding another one, and while they are holding Left Shift button
-        if(collision.gameObject.GetComponent<KeyComp>() && Input.GetKey(KeyCode.LeftShift) && !keyInHand)
+        if (collision.gameObject.GetComponent<KeyComp>() && Input.GetKey(KeyCode.LeftShift) && !keyInHand)
         {
+            if (collision.gameObject.tag == "ResKey")
+            {
+                PlayerHealthComp.Resurrect();
+            }
+
             keyInHand = collision.gameObject.GetComponent<KeyComp>();
             SoundManager.instance.PlaySound(SoundManager.SoundName.key);
-        }
-
-        // Ignore collisions with the map itself
-        if(collision.gameObject.name == "Tilemap")
-        {
-            Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), collision.collider);
         }
     }
 }

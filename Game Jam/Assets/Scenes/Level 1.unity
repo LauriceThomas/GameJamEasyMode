@@ -7193,6 +7193,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 153011472317888414, guid: ecf2aaf078a9c924e833cf67f76f94f4,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 0fd46e08a15611c45a9aabf287755fd0, type: 2}
     - target: {fileID: 153011472317888415, guid: ecf2aaf078a9c924e833cf67f76f94f4,
         type: 3}
       propertyPath: doorToUnlock

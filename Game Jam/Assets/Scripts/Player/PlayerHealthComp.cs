@@ -28,10 +28,11 @@ public class PlayerHealthComp : MonoBehaviour
     void Update()
     {
         // Inflict self damage
-        if (Input.GetKeyDown(KeyCode.Tab))
+       /* if (Input.GetKeyDown(KeyCode.Tab))
         {
             KillPlayer();
         }
+       */
 
         // Update HP Bar in UI
         if (healthbar)
