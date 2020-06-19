@@ -24,6 +24,6 @@ Got stuck in the level? Restart!
 * Golden Keys: Also known as Resurrection Keys. Resurrects the player, and also grants immunity while being hold.
 
 ## Credits
-*Itch.io Team Credits:  Tavera04, LoriTom, and AceSilverFang
-*Music Credits: Ludum Dare 38 #9 by Abstraction
+* Itch.io Team Credits:  Tavera04, LoriTom, and AceSilverFang
+* Music Credits: Ludum Dare 38 #9 by Abstraction
 www.abstractionmusic.com
