@@ -4,7 +4,7 @@ Created for Game Jam Easy Mode
 
 The theme chosen was "Death Means Nothing"
 
-##Instructions
+## Instructions
 
 There are a total of 5 levels in the game. To complete a level, the player must first look for a key that unlocks the door to the next level.
 
@@ -23,10 +23,7 @@ Got stuck in the level? Restart!
 * Red Keys: Regular keys that open doors.
 * Golden Keys: Also known as Resurrection Keys. Resurrects the player, and also grants immunity while being hold.
 
-Itch.io Team Credits:  Tavera04, LoriTom, and AceSilverFang
-
-Music Credits:
-
-Ludum Dare 38 #9 by Abstraction
-
+## Credits
+*Itch.io Team Credits:  Tavera04, LoriTom, and AceSilverFang
+*Music Credits: Ludum Dare 38 #9 by Abstraction
 www.abstractionmusic.com
